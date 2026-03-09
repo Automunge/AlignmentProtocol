@@ -5,7 +5,7 @@ Nicholas Teague
 
 March 9, 2026
 
-⸻
+
 
 ## Motivation
 
@@ -15,7 +15,7 @@ Modern language models increasingly demonstrate the ability to approximate human
 
 The proposal’s novelty does not lie in back-translation, self-consistency, or policy-constrained language modeling individually. Rather, it lies in combining them into a negotiation protocol in which stakeholder-specific transforms are used to expose incompatibilities through semantic drift, while revisions are restricted by a monotonic self-consistency condition so that candidate statements evolve only toward greater internal coherence or via explicit retraction.
 
-⸻
+
 
 ## Core Idea
 
@@ -48,7 +48,7 @@ Back-translation between languages provides a convenient example of such a trans
 
 In this framework, candidate statements are treated as evolving objects that must satisfy two constraints: stability under stakeholder interpretive transforms and increasing internal self-consistency as revisions are made. Transform stability reveals where statements conflict with stakeholder value policies, while the self-consistency constraint governs how statements may evolve during revision, ensuring that additions either clarify and improve consistency or otherwise are coupled with retractions of adjoining language.
 
-⸻
+
 
 ## Negotiation Through Transform Stability
 
@@ -65,7 +65,7 @@ A possible process:
 
 In this framework, definition drift becomes a continuous signal of interpretive tension, rather than a binary accept/reject decision, which could be expected to enable gradient based methods rather than accept/reject framings.
 
-⸻
+
 
 ## Self-Consistency Constraint
 
@@ -82,7 +82,7 @@ These operations may be used in conjunction with deletion operations, where cont
 
 One possible candidate metric for evaluating self-consistency involves analyzing the structure of token embeddings within the text. For instance, a singular value decomposition (SVD) of a token embedding matrix representing the statement could potentially be used to evaluate rank compactness as a proxy for semantic coherence (where rank compactness is referring to a concentration of variance in leading singular values). Under this hypothesis, increasingly coherent statements would exhibit greater rank compression. However, the efficacy of this metric remains speculative and would require experimental validation.
 
-⸻
+
 
 ## Semantic Drift as a Signal of Value Incompatibility
 
@@ -99,7 +99,7 @@ Importantly, this mechanism allows stakeholders to signal incompatibility withou
 
 The metric used to evaluate drift is currently undefined, several similarity metrics (eg cosine similarity) are commonly evaluated in contexts such as RAG database lookups that could be adapted for this purpose. For longer statements, the comparison between original and reconstructed statements may need to be conducted using segmentations, which could be considered at different scales like tokens, words, sentences, paragraphs, or more intelligent forms of segmentation could be conducted in a manner resembling how in the image modality frameworks like YOLO are able to extract cohesive physical elements from an image.
 
-⸻
+
 
 ## Role of Deletion and Narrowing
 
@@ -109,7 +109,7 @@ These deletion operations reduce semantic scope and may free space for stable ag
 
 By requiring any final distributed statement authorship being attributed to a specific human signature, then this can help us identify cases where dissent originates from an individual’s rather than a collective’s priorities and identify alternate candidates to take ownership for the scope of authorship. Requiring human authorship / final signature also helps to align the proposal to democratic processes as responsible parties are subject to deference to leadership and their appointees (or any future updates thereto) for instance. If a signing party declines to retract a contested claim then the reach of their further participation is subject to prioritization towards leadership objectives. 
 
-⸻
+
 
 ## Potential Applications
 
@@ -123,7 +123,7 @@ Possible domains include
 
 The approach may be particularly useful where many stakeholders bring different interpretive frameworks to the same text.
 
-⸻
+
 
 ## Expected Benefits
 
@@ -137,7 +137,7 @@ Transform stability negotiation may offer several advantages
 
 AI models function as exploratory probes during negotiation, testing how statements behave under different interpretive constraints before human negotiators finalize agreements.
 
-⸻
+
 
 ## Summary
 
