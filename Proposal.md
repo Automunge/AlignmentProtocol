@@ -33,14 +33,14 @@ Drift = x Δ T{-1}(T(x))
 
 Statements are then revised under constraints of increasing self consistency or deletions until a sufficiently acceptable semantic retention is achieved.
 
-Where:
+Where
 
-	*	T represents an interpretive transformation associated with a stakeholder perspective or value policy
-	*	T^{-1} attempts reconstruction of the original meaning (in a manner resembling language conversion followed by a back-translation to inspect meaning retention). Only fully aligned statements with counterparty policies will achieve minimal drift or precise mathematical inversion.
-	*	The symmetric difference Δ between original statement and reconstruction is evaluated for Drift
-	*	The set of elements inspected for drift could either be from the statement evaluated in aggregate, for longer passages by tokens/sentences/paragraphs, or by using algorithmic forms of semantic segmentation.
-	*	Drift between the original and reconstructed statement reflects semantic instability, and can be used to identify specific segments of a statement meriting further attention
-	*	Drift can either be evaluated by human inspection or using metrics of comparison like eg cosine similarility
+- T represents an interpretive transformation associated with a stakeholder perspective or value policy
+- T^{-1} attempts reconstruction of the original meaning (in a manner resembling language conversion followed by a back-translation to inspect meaning retention). Only fully aligned statements with counterparty policies will achieve minimal drift or precise mathematical inversion.
+- The symmetric difference Δ between original statement and reconstruction is evaluated for Drift
+- The set of elements inspected for drift could either be from the statement evaluated in aggregate, for longer passages by tokens/sentences/paragraphs, or by using algorithmic forms of semantic segmentation.
+- Drift between the original and reconstructed statement reflects semantic instability, and can be used to identify specific segments of a statement meriting further attention
+- Drift can either be evaluated by human inspection or using metrics of comparison like eg cosine similarility
 
 If a statement remains stable through this transform–invert cycle, its meaning is likely robust under different policy conventions. If instability appears, the statement may contain ambiguity, implicit assumptions, or conflicts with stakeholder constraints.
 
@@ -73,10 +73,10 @@ A critical requirement for the framework is self-consistency. Self consistent st
 
 When models append additional tokens to a statement during negotiation, they may only do so in a manner that increases a self-consistency metric. If an existing statement contains ambiguity or internal contradiction, additional tokens may clarify, correct, or retract prior elements of the statement.
 
-For example:
+For example
 
-	*	clarifying language may resolve ambiguity
-	*	corrective language may retract or refine earlier claims
+- clarifying language may resolve ambiguity
+- corrective language may retract or refine earlier claims
 
 These operations may be used in conjunction with deletion operations, where contested claims are removed entirely to allow convergence. 
 
@@ -88,10 +88,10 @@ One possible candidate metric for evaluating self-consistency involves analyzing
 
 In this framework, interpretive transforms are structured such that statements incompatible with a stakeholder’s value policy may become partially or fully obscured during translation.
 
-Examples include:
+Examples include
 
-	*	a highly incompatible statement being omitted entirely during transformation
-	*	a partially incompatible statement having aspects of its meaning summarized, softened, reformulated, or obscured to a degree based on the extent of incompatibility with the policy
+- a highly incompatible statement being omitted entirely during transformation
+- a partially incompatible statement having aspects of its meaning summarized, softened, reformulated, or obscured to a degree based on the extent of incompatibility with the policy
 
 This behavior produces a variable signal of incompatibility. The degree of semantic drift provides an indication of how strongly a statement conflicts with a stakeholder’s interpretive constraints.
 
@@ -113,13 +113,13 @@ By requiring any final distributed statement authorship being attributed to a sp
 
 ## Potential Applications
 
-Possible domains include:
+Possible domains include
 
-	*	multi-party policy drafting
-	*	international communication across regulatory regimes
-	*	AI-assisted contract negotiation
-	*	mediation of disputes involving institutional constraints
-	*	review of documents intended for broad public distribution.
+- multi-party policy drafting
+- international communication across regulatory regimes
+- AI-assisted contract negotiation
+- mediation of disputes involving institutional constraints
+- review of documents intended for broad public distribution.
 
 The approach may be particularly useful where many stakeholders bring different interpretive frameworks to the same text.
 
@@ -127,13 +127,13 @@ The approach may be particularly useful where many stakeholders bring different 
 
 ## Expected Benefits
 
-Transform stability negotiation may offer several advantages:
+Transform stability negotiation may offer several advantages
 
-	*	reduced negotiation loops
-	*	earlier identification of interpretive conflicts
-	*	structured exploration of contested semantic space
-	*	continuous signals of incompatibility rather than binary rejection
-	*	negotiation mechanisms that allow stakeholders to signal conflicts without revealing sensitive internal rationale.
+- reduced negotiation loops
+- earlier identification of interpretive conflicts
+- structured exploration of contested semantic space
+- continuous signals of incompatibility rather than binary rejection
+- negotiation mechanisms that allow stakeholders to signal conflicts without revealing sensitive internal rationale.
 
 AI models function as exploratory probes during negotiation, testing how statements behave under different interpretive constraints before human negotiators finalize agreements.
 
