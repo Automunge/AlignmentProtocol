@@ -1,7 +1,7 @@
 # Transform Stability and Self-Consistency in AI-Mediated Negotiation
-## A High-Level Proposal
+**A High-Level Proposal**
 
-Nicholas Teague
+Nicholas Teague, PE
 
 March 9, 2026
 
