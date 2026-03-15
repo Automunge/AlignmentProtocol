@@ -66,6 +66,22 @@ A possible process:
 In this framework, definition drift becomes a continuous signal of interpretive tension, rather than a binary accept/reject decision, which could be expected to enable gradient based methods rather than accept/reject framings.
 
 
+## Semantic Drift as a Signal of Value Incompatibility
+
+In this framework, interpretive transforms are structured such that statements incompatible with a stakeholder’s value policy may become partially or fully obscured during translation.
+
+Examples include
+
+- a highly incompatible statement being omitted entirely during transformation
+- a partially incompatible statement having aspects of its meaning summarized, softened, reformulated, or obscured to a degree based on the extent of incompatibility with the policy
+
+This behavior produces a variable signal of incompatibility. The degree of semantic drift provides an indication of how strongly a statement conflicts with a stakeholder’s interpretive constraints.
+
+Importantly, this mechanism allows stakeholders to signal incompatibility without revealing their underlying rationale or sensitive policies. By allowing transforms to obscure incompatible content rather than explicitly justify their decisions, the framework supports negotiation while reducing the risk of leaking adjacent sensitive information.
+
+The metric used to evaluate drift is currently undefined, several similarity metrics (eg cosine similarity) are commonly evaluated in contexts such as RAG database lookups that could be adapted for this purpose. For longer statements, the comparison between original and reconstructed statements may need to be conducted using segmentations, which could be considered at different scales like tokens, words, sentences, paragraphs, or more intelligent forms of segmentation could be conducted in a manner resembling how in the image modality frameworks like YOLO are able to extract cohesive physical elements from an image.
+
+
 
 ## Self-Consistency Constraint
 
@@ -82,22 +98,6 @@ These operations may be used in conjunction with deletion operations, where cont
 
 One possible candidate metric for evaluating self-consistency involves analyzing the structure of token embeddings within the text. For instance, a singular value decomposition (SVD) of a token embedding matrix representing the statement could potentially be used to evaluate rank compactness as a proxy for semantic coherence (where rank compactness is referring to a concentration of variance in leading singular values). Under this hypothesis, increasingly coherent statements would exhibit greater rank compression. However, the efficacy of this metric remains speculative and would require experimental validation.
 
-
-
-## Semantic Drift as a Signal of Value Incompatibility
-
-In this framework, interpretive transforms are structured such that statements incompatible with a stakeholder’s value policy may become partially or fully obscured during translation.
-
-Examples include
-
-- a highly incompatible statement being omitted entirely during transformation
-- a partially incompatible statement having aspects of its meaning summarized, softened, reformulated, or obscured to a degree based on the extent of incompatibility with the policy
-
-This behavior produces a variable signal of incompatibility. The degree of semantic drift provides an indication of how strongly a statement conflicts with a stakeholder’s interpretive constraints.
-
-Importantly, this mechanism allows stakeholders to signal incompatibility without revealing their underlying rationale or sensitive policies. By allowing transforms to obscure incompatible content rather than explicitly justify their decisions, the framework supports negotiation while reducing the risk of leaking adjacent sensitive information.
-
-The metric used to evaluate drift is currently undefined, several similarity metrics (eg cosine similarity) are commonly evaluated in contexts such as RAG database lookups that could be adapted for this purpose. For longer statements, the comparison between original and reconstructed statements may need to be conducted using segmentations, which could be considered at different scales like tokens, words, sentences, paragraphs, or more intelligent forms of segmentation could be conducted in a manner resembling how in the image modality frameworks like YOLO are able to extract cohesive physical elements from an image.
 
 
 
