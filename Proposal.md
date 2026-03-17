@@ -1,5 +1,5 @@
-# Transform Stability and Self-Consistency in AI-Mediated Negotiation
-**A High-Level Proposal**
+#AlignmentProtocol
+**Transform Stability and Self-Consistency in AI-Mediated Negotiation**
 
 Nicholas Teague, PE
 
