@@ -6,3 +6,5 @@ Please see document Proposal.md for details.
 Copyright (c) 2026, Nicholas Teague
 
 Inquiries or outreach to the developer is invited at https://www.linkedin.com/in/nicholaste/
+
+Patent Pending
